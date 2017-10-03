@@ -1,8 +1,20 @@
-alert("hello");
+console.log("Hello");
+var age = Number(prompt("Please enter your age"));
 
-console.log("Hello ");
-var x = 10;
-var y = "a";
+if (age<0) {
+  console.log("Age can not be negative");
+}
+else if (age==21) {
+  console.log("Happy 21st birthday.");
+}
+else if (age%2!=0) {
+  console.log("your age is odd.");
+}
+else {
+  console.log("Nothing particular. No cases matched");
+}
 
-var k = x === y || x>=10 ;
-console.log(k);
+
+if (Math.sqrt(age)%1==0) {
+  console.log("Your age is a perfect square.");
+}
